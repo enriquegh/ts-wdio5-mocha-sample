@@ -1,0 +1,31 @@
+{
+  "name": "wdio5-mocha-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "ip-range-check": "0.0.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@wdio/cli": "^5.10.0",
+    "@wdio/dot-reporter": "^5.11.0",
+    "@wdio/local-runner": "^5.10.10",
+    "@wdio/mocha-framework": "^5.10.10",
+    "@wdio/sauce-service": "^5.10.8",
+    "@wdio/spec-reporter": "^5.9.3",
+    "@wdio/sync": "^5.10.8",
+    "chai": "^4.2.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4",
+    "webdriverio": "^5.10.0"
+  },
+  "scripts": {
+    "test": "wdio wdio.sauce.conf.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
