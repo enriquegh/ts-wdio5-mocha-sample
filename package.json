@@ -1,5 +1,5 @@
 {
-  "name": "wdio5-mocha-sandbox",
+  "name": "ts-wdio5-mocha-simple",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +26,6 @@
   "scripts": {
     "test": "wdio wdio.sauce.conf.js"
   },
-  "author": "",
+  "author": "Enrique Gonzalez",
   "license": "ISC"
 }
