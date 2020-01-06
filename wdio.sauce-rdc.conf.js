@@ -27,8 +27,8 @@ exports.config = {
 
     // sauceConnectOpts: {
     //     "-x": "https://us1.api.testobject.com/sc/rest/v1",
-    //     username: "csteam",
-    //     accessKey: "***REMOVED***",
+    //     username: "MY_USERNAME",
+    //     accessKey: "MY_ACCESS_KEY",
     //     tunnelIdentifier: "myTunnel"
     // },
     
