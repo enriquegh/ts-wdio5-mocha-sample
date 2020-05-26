@@ -24,8 +24,7 @@
     "webdriverio": "^5.10.0"
   },
   "scripts": {
-    "test:sauce": "wdio wdio.sauce.conf.js",
-    "test": "wdio"
+    "test": "wdio wdio.sauce.conf.js"
   },
   "author": "Enrique Gonzalez",
   "license": "ISC"

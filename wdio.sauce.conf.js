@@ -1,4 +1,13 @@
 // process.env.NODE_DEBUG = "request";
+const cloneCapabilities = require("./utils")
+const NUM_OF_INSTANCES = 80;
+const datetime = new Date();
+const baseCapability = {
+    browserName: "chrome",
+    version: "latest",
+    platform: "Windows 10",
+    build: `HIGH CCY BUILD - ${NUM_OF_INSTANCES} CCY - ${datetime}`
+};
 exports.config = {
     // debug: true,
     // execArgv: ['--inspect=127.0.0.1:5859'],
@@ -42,8 +51,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './tests/*.js',
-        './tests/*.ts'
+        './tests/sample-google.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -65,24 +73,13 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 100,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [
-
-        {
-            browserName: "chrome",
-            version: "latest",
-            platform: "Windows 10",
-            extendedDebugging: true,
-            capturePerformance: true,
-        },
-        
-
-    ],
+    capabilities: cloneCapabilities(baseCapability, NUM_OF_INSTANCES),
     //
     // ===================
     // Test Configurations
