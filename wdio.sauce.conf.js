@@ -6,7 +6,7 @@ const baseCapability = {
     browserName: "chrome",
     version: "latest",
     platform: "Windows 10",
-    build: `HIGH CCY BUILD - ${NUM_OF_INSTANCES} CCY - ${datetime}`
+    build: process.env.SAUCE_BUILD_NAME || `HIGH CCY BUILD - ${NUM_OF_INSTANCES} CCY - ${datetime}`
 };
 exports.config = {
     // debug: true,
